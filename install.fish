@@ -12,7 +12,7 @@ echo -e "\033[1;33mNote: You may be asked for your sudo password during installa
 # ===================================================
 set TEMP_DIR (mktemp -d)
 set STEP 0
-set TOTAL_STEPS 15
+set TOTAL_STEPS 16
 
 cd $TEMP_DIR
 
@@ -489,6 +489,16 @@ function install_libewf
 end
 
 
+function install_zoekt
+  stage "Install zoekt"
+  go install github.com/sourcegraph/zoekt/cmd/zoekt-webserver@main
+  go install github.com/sourcegraph/zoekt/cmd/zoekt-indexserver@main
+  go install github.com/sourcegraph/zoekt/cmd/zoekt@main
+  go install github.com/sourcegraph/zoekt/cmd/zoekt-index@main
+  go install github.com/sourcegraph/zoekt/cmd/zoekt-git-index@main
+  run ln -s $(go env GOPATH)/bin/zoekt* /usr/bin/
+  stage_msg "zoekt installed"
+end
 
 # ==================================================
 # Main function
@@ -509,4 +519,5 @@ install_libewf
 install_pwndbg
 install_reporting_tools
 install_dotnet_analysis_tools
+install_zoekt
 cleanup
