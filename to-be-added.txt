@@ -1,0 +1,67 @@
+# General
+https://github.com/BinaryAnalysisPlatform/bap
+https://github.com/QBDI/QBDI
+https://www.gnu.org/software/cflow/
+llvm-decompiler
+https://valgrind.org/
+PIN-Tools
+
+# Development
+JDK
+QT-Framework
+Dart SDK
+Flutter sdk
+golang
+
+
+# Dotnet
+https://github.com/de4dot/de4dot
+https://github.com/0xd4d/dnlib
+
+# Mobile
+https://github.com/dart-lang/sdk
+https://github.com/Impact-I/reFlutter
+https://github.com/worawit/blutter
+Android Emulator
+
+# Web
+ChakraEngine
+PyV8
+
+
+# Documentation
+x86 Instruction Set Reference
+arm64 Instruction Set Reference
+Installed Tools Reference
+https://www.ired.team/
+MITRE ATT&CK
+
+
+# Reporting
+Custom Shortcodes
+ - Display code form local files
+ - Code Diff Higlighting by shortcode comparing to files or strings
+ - Display Binary Diff
+ - Flow charting (maunual and based on code)
+ - Fancy tables
+ - Securely display IP, URL, and other sensitive data (to prevent auto-linking)
+ - Code as image
+Code Complexity Calculation
+ - cloc
+ - cyclomatic complexity (Control flow complexity)
+  - Halstead Complexity
+  - Entropy complexity
+  - Collberg's Potency and Resilience
+Visualization
+ - Graphviz
+ - Mermaid
+ - Matplotlib
+ - Plotly
+ - Seaborn
+ - netwrokx
+ - pandas (Styler)
+
+
+# Debugging
+https://github.com/HyperDbg/HyperDbg
+
