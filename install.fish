@@ -353,7 +353,7 @@ function install_ghidra
   run sudo unzip -q $ghidra_zip -d $ghidra_dir
 
   # Create a symbolic link to the ghidra directory
-  run sudo ln -s -f $ghidra_dir/ghidra_11.3.1_PUBLIC_20250219/ghidraRun /usr/local/bin/ghidra
+  run sudo ln -s -f $ghidra_dir/ghidra_11.3.1_PUBLIC/ghidraRun /usr/local/bin/ghidra
 
   # Create a desktop entry for Ghidra
   run mkdir -p ~/.local/share/applications
@@ -363,7 +363,7 @@ Type=Application
 Name=Ghidra
 GenericName=Reverse Engineering Framework
 Comment=Ghidra is a software reverse engineering (SRE) framework
-Exec=$ghidra_dir/ghidra_11.3.1_PUBLIC_20250219/ghidraRun
+Exec=$ghidra_dir/ghidra_11.3.1_PUBLIC/ghidraRun
 Icon=$icon_path
 Terminal=false
 Categories=Development;Utility;
